@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        h1 {
+            color: #9af;
+        }
+
+        * {
+            font-size: 24px;
+        }
+
+        ul>li {
+            line-height: 40px;
+        }
+
+        input[type=checkbox] {
+            width: 24px;
+            height: 24px;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script/script.js"></script>
+</head>
+
+<body>
+
+    <h1>form요소를 사용한 데이터 전송</h1>
+
+    <form action="https://www.google.com" method="post">
+
+        <ul>
+            <li>
+                ID <input type="text" size="10" id="ID">
+            </li>
+            <li>
+                PW <input type="password" size="10" id="pw" class="pw">
+            </li>
+            <li>
+                PW확인 <input type="password" size="10" name="uPW" id="pwRE" class="pw">
+            </li>
+            <li>
+                비밀번호 보기 <input type="checkbox" id="chkbox">
+            </li>
+
+            <li>
+                생년월일
+                <select name="birthYear" id="birthYear"><!-- txtYear 값 넣기 --></select>
+
+                <select name="birthMonth">
+                    <option>월</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                </select>
+            </li>
+            <li>
+                <input type="button" value="전송">
+                <!-- input type = submit 으로 만들게 되면, 비밀번호가 다르더라도
+                        무조건 전송이 되기 때문에 input type을 button으로 바꾼다.  -->
+            </li>
+        </ul>
+
+
+
+
+    </form>
+
+
+
+
+</body></html>
